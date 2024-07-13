@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 08 15:31:14 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (747 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.SoftAssert.testCase1()'><b>testCase1</b><br>Test class: TestNG.SoftAssert</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method assertEquals(int, int, String) is undefined for the type SoftAssert
+	The method assertEquals(String, String, String) is undefined for the type SoftAssert
+	The method assertAll() is undefined for the type SoftAssert
+
+	at TestNG.SoftAssert.testCase1(SoftAssert.java:11)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace875313400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace875313400'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method assertEquals(int, int, String) is undefined for the type SoftAssert
+	The method assertEquals(String, String, String) is undefined for the type SoftAssert
+	The method assertAll() is undefined for the type SoftAssert
+
+	at TestNG.SoftAssert.testCase1(SoftAssert.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.SoftAssert@2f8f5f62</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.AllAnnotations.testCase1()'><b>testCase1</b><br>Test class: TestNG.AllAnnotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.AllAnnotations@7ba18f1b</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name1, Password1</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.AllAnnotations.testCase3()'><b>testCase3</b><br>Test class: TestNG.AllAnnotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.AllAnnotations@7ba18f1b</td></tr>
+<tr>
+<td title='TestNG.OrderDemo.login()'><b>login</b><br>Test class: TestNG.OrderDemo</td>
+<td></td>
+<td>0</td>
+<td>TestNG.OrderDemo@78186a70</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name6, Password6</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name10, Password10</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name14, Password14</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.HelloWorldTestNG.launch()'><b>launch</b><br>Test class: TestNG.HelloWorldTestNG</td>
+<td></td>
+<td>0</td>
+<td>TestNG.HelloWorldTestNG@319b92f3</td></tr>
+<tr>
+<td title='TestNG.HelloWorldTestNG.logout()'><b>logout</b><br>Test class: TestNG.HelloWorldTestNG</td>
+<td></td>
+<td>0</td>
+<td>TestNG.HelloWorldTestNG@319b92f3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name12, Password12</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: TestNG.ParamWithArray<br>Parameters: Name2, password2</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithArray@fcd6521</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name13, Password13</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name15, Password15</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name2, Password2</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name3, Password3</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name5, Password5</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.OrderDemo.Deletemail()'><b>Deletemail</b><br>Test class: TestNG.OrderDemo</td>
+<td></td>
+<td>0</td>
+<td>TestNG.OrderDemo@78186a70</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name4, Password4</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.HardAssert.testCase1()'><b>testCase1</b><br>Test class: TestNG.HardAssert</td>
+<td></td>
+<td>0</td>
+<td>TestNG.HardAssert@27d415d9</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name7, Password7</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name11, Password11</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.AllAnnotations.testCase2()'><b>testCase2</b><br>Test class: TestNG.AllAnnotations</td>
+<td></td>
+<td>0</td>
+<td>TestNG.AllAnnotations@7ba18f1b</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name9, Password9</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: TestNG.ParamWithArray<br>Parameters: Name3, password3</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithArray@fcd6521</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name16, Password16</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.HelloWorldTestNG.create()'><b>create</b><br>Test class: TestNG.HelloWorldTestNG</td>
+<td></td>
+<td>0</td>
+<td>TestNG.HelloWorldTestNG@319b92f3</td></tr>
+<tr>
+<td title='TestNG.ParamWithArray.testCase1()'><b>testCase1</b><br>Test class: TestNG.ParamWithArray<br>Parameters: Name1, password1</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithArray@fcd6521</td></tr>
+<tr>
+<td title='TestNG.ParamWithExcel.testcase1()'><b>testcase1</b><br>Test class: TestNG.ParamWithExcel<br>Parameters: Name8, Password8</td>
+<td></td>
+<td>0</td>
+<td>TestNG.ParamWithExcel@2f0a87b3</td></tr>
+<tr>
+<td title='TestNG.OrderDemo.composemail()'><b>composemail</b><br>Test class: TestNG.OrderDemo</td>
+<td></td>
+<td>0</td>
+<td>TestNG.OrderDemo@78186a70</td></tr>
+<tr>
+<td title='TestNG.HelloWorldTestNG.login()'><b>login</b><br>Test class: TestNG.HelloWorldTestNG</td>
+<td></td>
+<td>0</td>
+<td>TestNG.HelloWorldTestNG@319b92f3</td></tr>
+</table><p>
+</body>
+</html>
